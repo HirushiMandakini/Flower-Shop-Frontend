@@ -5,7 +5,7 @@ import flowerBoquetReducer from "./slices/flowerBoquetSlice";
 import orderReducer from "./slices/orderSlice";
 import orderDetailReducer from "./slices/orderDetailSlice";
 import supplierReducer from "./slices/supplierSlice";
-
+import authReducer from "./slices/authSlice";
 
 export const store = configureStore({
   reducer: {
@@ -15,6 +15,7 @@ export const store = configureStore({
     order: orderReducer,
     orderDetail: orderDetailReducer,
     supplier: supplierReducer,
+    auth: authReducer,
   },
 });
 

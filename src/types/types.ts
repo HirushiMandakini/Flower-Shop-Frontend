@@ -47,3 +47,11 @@ export interface Customer {
     date: string;
     customerId: string;  // Ensure this remains a string (matches backend)
 }
+
+  export interface User {
+    id: string;
+    name: string;
+    email: string;
+    password?: string; // Optional to avoid exposing passwords in the frontend
+    createdAt: string;
+}
